@@ -1,0 +1,16 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./gradient_boosting_model/*
+
+include classification_model/datasets/audit_data.csv
+include classification_model/trained_models/*.pkl
+include classification_model/VERSION
+
+
+include ./requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
