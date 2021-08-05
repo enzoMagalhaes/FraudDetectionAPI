@@ -10,3 +10,8 @@ def pipeline_inputs():
 												 ,test_size=0.2,random_state=0)
 
 	return xtrain,xtest,ytrain,ytest
+
+@pytest.fixture()
+def raw_data():
+	df = dm.load_dataset()
+	return df

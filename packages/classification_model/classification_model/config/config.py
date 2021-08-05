@@ -1,3 +1,5 @@
+PACKAGE_NAME = "classification_model"
+
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent
