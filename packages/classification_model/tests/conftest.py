@@ -15,3 +15,15 @@ def pipeline_inputs():
 def raw_data():
 	df = dm.load_dataset()
 	return df
+
+
+@pytest.fixture()
+def json_sample():
+	
+	sample = open("tests/sample_input.json",)
+
+	import json
+	data = json.load(sample)
+
+	sample.close()
+	return data

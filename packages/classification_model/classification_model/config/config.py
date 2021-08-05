@@ -14,11 +14,8 @@ MODELS_DIR = ROOT_DIR / "trained_models"
 MODEL_NAME = f"fraud_predictor_{VERSION}.pkl"
 
 
-VARIABLES_TO_RENAME = {"Score_B.1":"Score_B_1"}
-
-
 SELECTED_FEATURES = ['Sector_score', 'PARA_A', 'Score_A', 'Risk_A', 'PARA_B', 'Score_B',
-       'Risk_B', 'TOTAL', 'numbers', 'Score_B_1', 'Risk_C', 'Money_Value',
+       'Risk_B', 'TOTAL', 'numbers', 'Risk_C', 'Money_Value',
        'Score_MV', 'Risk_D', 'District_Loss', 'PROB', 'RiSk_E', 'History',
        'Prob', 'Risk_F', 'Score', 'Inherent_Risk', 'CONTROL_RISK',
        'Detection_Risk', 'Audit_Risk','LOCATION_ID']
@@ -26,7 +23,7 @@ SELECTED_FEATURES = ['Sector_score', 'PARA_A', 'Score_A', 'Risk_A', 'PARA_B', 'S
 CATEGORICAL_FEATURE = 'LOCATION_ID'
 
 NUMERICAL_FEATURES = ['Sector_score', 'PARA_A', 'Score_A', 'Risk_A', 'PARA_B', 'Score_B',
-       'Risk_B', 'TOTAL', 'numbers', 'Score_B.1', 'Risk_C', 'Money_Value',
+       'Risk_B', 'TOTAL', 'numbers', 'Risk_C', 'Money_Value',
        'Score_MV', 'Risk_D', 'District_Loss', 'PROB', 'RiSk_E', 'History',
        'Prob', 'Risk_F', 'Score', 'Inherent_Risk', 'CONTROL_RISK',
        'Detection_Risk', 'Audit_Risk']

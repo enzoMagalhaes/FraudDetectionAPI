@@ -6,9 +6,7 @@ _logger = logging.getLogger(__name__)
 def load_dataset(filename="audit_data.csv"):
 	import pandas as pd
 	df = pd.read_csv(config.DATASETS_DIR/filename)
-	
-	# rename the bad name
-	df.rename(columns={"Score_B.1":"Score_B_1"}, inplace=True)
+	df = df.drop(["Score_B.1"],axis=1)
 
 	return df 
 

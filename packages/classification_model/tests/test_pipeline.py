@@ -18,3 +18,11 @@ def test_single_input_prediction(pipeline_inputs):
 
 
 	assert result["prediction"][0]
+
+def test_prediction_on_json(json_sample):
+
+	result = make_prediction(json_sample)
+	print(result)
+
+	assert result["errors"] is None
+	assert len(result["prediction"]) == len(json_sample)
