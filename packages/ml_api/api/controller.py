@@ -11,7 +11,10 @@ def health():
 @prediction_app.route("/predict",methods=["POST"])
 def predict():
 	if request.method == "POST":
-		json_data = request.get_json()
+
+		# for some reason request.get_json() returns null value for post requests
+		# json_data = request.get_json()
+		json_data = request.get_json(force=True)
 
 		from classification_model.predict import make_prediction
 		result = make_prediction(json_data)

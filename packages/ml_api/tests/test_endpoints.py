@@ -19,7 +19,6 @@ def test_health_endpoint(client):
 
 def test_prediction_endpoint(client):
     # Given
-    # Load the test dataset which is included in the model package
     test_inputs_df = load_dataset()  # dataframe
 
     # When
