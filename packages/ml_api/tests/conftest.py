@@ -1,10 +1,11 @@
 import pytest
 from api.app import create_app
+from api.config import DevelopmentConfig
 
 
 @pytest.fixture(scope='session')
 def app():
-    app = create_app()
+    app = create_app(config_object=DevelopmentConfig)
     with app.app_context():
         yield app
 

@@ -1,4 +1,4 @@
-model_package/classification_model-0.1.0-py3-none-any.whl
+model_package/classification_model-0.2.1-py3-none-any.whl
 
 # Web microframework for the API
 flask>=1.1.1,<1.2.0

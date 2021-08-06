@@ -4,14 +4,13 @@ from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent
 
-VERSION = "0.1.0"
 VERSION_PATH = ROOT_DIR/"VERSION"
 
 DATASETS_DIR = ROOT_DIR / "datasets"
 
 MODELS_DIR = ROOT_DIR / "trained_models"
 
-MODEL_NAME = f"fraud_predictor_{VERSION}.pkl"
+MODEL_NAME = "fraud_predictor"
 
 
 SELECTED_FEATURES = ['Sector_score', 'PARA_A', 'Score_A', 'Risk_A', 'PARA_B', 'Score_B',
